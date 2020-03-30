@@ -2,6 +2,8 @@ import logging
 from requests.auth import HTTPBasicAuth
 import requests
 
+logger = logging.getLogger()
+
 class GithubApi(object):
     __HOST = "http://api.github.com/repos"
 
@@ -24,10 +26,12 @@ class GithubApi(object):
         return resp
 
     def repoDetails(self,url):
+        logger.info("Start with API: repoDetails")
         response = self._get_github_response(url)
         return response.json()
 
     def starGazerDetails(self,url):
+        logger.info("Start with API: starGazerDetails")
         headers = {"Accept": "application/vnd.github.v3.star+json"}
         response = self._get_github_response(url, headers = headers)
         return response.json()
