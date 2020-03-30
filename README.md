@@ -1,5 +1,3 @@
-We would like to be able to analyze the Star Count over time of github repositories. For this, we need to generate a dataset containing the relevant information in an easily processable format. We would like you to write code to extract star count information from a GitHub repository and create the dataset with this information. We are interested in how many people "starred" a given repository per time interval.
-
 **Solution to Technical Task for a position of Data Engineer @ Marley Spoon**
 
 **Description:**
