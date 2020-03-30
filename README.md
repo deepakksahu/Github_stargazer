@@ -14,7 +14,7 @@ You do not need to group the data per time interval but allow another team to de
 5. Add required comments to increase the readability of the code.
 6. Add the docker file to containerize the solution.
 7. Add all the dependency in requirements.txt.
-8. Write the DF to s3 as well as postgres.
+8. Write the DF to s3.
 9. Add the airflow DAG consider we have k8s to spin pods.
 
 **Command:**  
